@@ -1,4 +1,3 @@
-# TCS_Advanced-Coding_Question
 /*
 Write a program to find the smallest integer value 'b' for the given value of 'a'. If we multiply the digits of 'b', we should get the exact value of 'a'. 
 Result 'b' must contain more than one digit. 
