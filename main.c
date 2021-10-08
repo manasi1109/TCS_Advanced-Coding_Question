@@ -35,11 +35,15 @@ using namespace std;
 #define MAX 10000
 
 int main(){
-    int k;
+    int k,mul;
     cin >> k;
+    if(k<10){
+        printf("%d",k+10);
+        return 0;
+    }
     for(int i = 10; i<MAX; i++){
         int num = i;
-        int mul = 1;
+        mul = 1;
         while(num != 0){
         int temp = num%10;
         num/=10;
@@ -49,8 +53,9 @@ int main(){
             printf("%d",i);
             break;
         }
-        else
+    }
+     if(mul != k){
         printf("NOT POSSIBLE");
-        break;
+        return 0;
         }
 }
